@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>XYZ Bank Diwali Coupon</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1> XYZ Bank Diwali Bonanza </h1>
+
+
+        <!-- Welcome Message -->
+        <h2 id="welcomeMessage"></h2>
+
+
+        <!-- Customer Details -->
+
+        <div class="customer-section">
+
+            <h3>Customer Details</h3>
+
+
+            <p>
+                <b>Customer Name:</b>
+                <span id="customerName"></span>
+            </p>
+
+
+            <p>
+                <b>Customer ID:</b>
+
+                <input 
+                type="text" 
+                id="customerIdInput"
+                placeholder="Enter your Customer ID">
+
+            </p>
+
+
+        </div>
+
+
+
+        <!-- Coupon Steps -->
+
+        <div id="couponSteps">
+
+            <h3>Steps to Apply for Diwali Coupon</h3>
+
+            <ol>
+
+                <li>Enter your Customer ID.</li>
+
+                <li>Click on Register button.</li>
+
+                <li>Get your Diwali coupon code.</li>
+
+            </ol>
+
+        </div>
+
+
+
+        <button onclick="registerUser()">
+            Register
+        </button>
+
+
+
+        <!-- Coupon Result -->
+
+        <div class="coupon-box">
+
+            <h3 id="couponMessage"></h3>
+
+        </div>
+
+
+
+    </div>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Customer Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Bank Customer Dashboard</h1>
+
+        <!-- Customer Details -->
+
+        <div class="customer">
+
+            <h2>Customer Details</h2>
+
+            <p><b>Name :</b> Ananya Yadav</p>
+
+            <p><b>Account Number :</b> 1234567890</p>
+
+            <p><b>Account Type :</b> Savings</p>
+
+            <h3>
+                Current Balance :
+                ₹<span id="balance">10000</span>
+            </h3>
+
+        </div>
+
+        <!-- Transaction -->
+
+        <div class="transaction">
+
+            <h2>New Transaction</h2>
+
+            <label>Transaction Type</label>
+
+            <select id="type">
+
+                <option value="Deposit">Deposit</option>
+
+                <option value="Withdraw">Withdraw</option>
+
+            </select>
+
+            <br><br>
+
+            <label>Amount</label>
+
+            <input
+                type="number"
+                id="amount"
+                placeholder="Enter Amount">
+
+            <br><br>
+
+            <button onclick="addTransaction()">
+                Submit
+            </button>
+
+        </div>
+
+        <!-- Transaction History -->
+
+        <div class="history">
+
+            <h2>Transaction History</h2>
+
+            <table>
+
+                <tr>
+
+                    <th>Date</th>
+
+                    <th>Type</th>
+
+                    <th>Amount</th>
+
+                    <th>Balance</th>
+
+                </tr>
+
+                <tbody id="historyTable">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
